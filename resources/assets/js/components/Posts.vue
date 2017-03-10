@@ -3,8 +3,7 @@
         <template v-if="ready">
             <post v-for="(post, i) in posts" :index="i" :post="post"></post>
         </template>
-        <template v-else>Loading</template>
-            <button @click="addPosts">More</button>
+        <template v-else>Loading ... </template>
     </div>
 </template>
 

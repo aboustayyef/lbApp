@@ -25,15 +25,10 @@
 
     	<section id="main" class="give-top">
 	    	<div class="container">
-		        <div class="columns">
-		        	<div class="column is-one-thid">
 		        		<top-posts></top-posts>
-		        	</div>
-		        	<div class="column is-two-thirds">
+		        		<hr>
 				        <h1>Posts:</h1>
 						<posts></posts>
-		        	</div>
-		        </div>
 		        
 	    	</div>
     	</section>

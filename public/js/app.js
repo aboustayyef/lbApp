@@ -12192,7 +12192,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {
@@ -12263,6 +12262,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     props: ['post']
@@ -12274,6 +12282,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -32080,11 +32092,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "post": post
       }
     })
-  }) : [_vm._v("Loading")], _vm._v(" "), _c('button', {
-    on: {
-      "click": _vm.addPosts
-    }
-  }, [_vm._v("More")])], 2)
+  }) : [_vm._v("Loading ... ")]], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -32099,12 +32107,19 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('figure', {
-    staticClass: "image is-3by2"
-  }, [_c('img', {
+  return _c('div', {
+    staticClass: "topPost"
+  }, [_c('div', {
+    staticClass: "topPost__header"
+  }, [_vm._v("\n\t\t" + _vm._s(_vm.post.blog.blog_name) + "\n\t")]), _vm._v(" "), _c('div', {
+    staticClass: "topPost__body"
+  }, [_c('h2', [_vm._v(_vm._s(_vm.post.post_title))]), _vm._v(" "), _c('img', {
     attrs: {
-      "src": _vm.post.post_original_image
+      "src": _vm.post.post_original_image,
+      "width": "350px"
     }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "topPost__footer"
   })])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
@@ -32120,14 +32135,20 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('h1', [_vm._v("Top Posts")]), _vm._v(" "), (_vm.ready) ? _c('ul', _vm._l((_vm.posts), function(post) {
+  return _c('div', [_c('h1', [_vm._v("Top Posts")]), _vm._v(" "), (_vm.ready) ? _c('ul', {
+    attrs: {
+      "id": "topPosts"
+    }
+  }, [_vm._l((_vm.posts), function(post) {
     return _c('top-post', {
       attrs: {
         "post": post
       }
     })
-  })) : _c('span', [_vm._v("Loading..")])])
-},staticRenderFns: []}
+  }), _vm._v(" "), _vm._m(0)], 2) : _c('span', [_vm._v("Loading..")])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('h2', [_vm._v("Get this list by mail")]), _vm._v(" "), _c('p', [_vm._v("get the lists of top posts weekly by email")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

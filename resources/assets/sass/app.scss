@@ -1,0 +1,14 @@
+
+// Variables
+@import "variables";
+@import "../../../node_modules/bulma/bulma";
+@import "layout";
+.give-top{
+	margin-top:2em;
+}
+
+.card{
+	width:$card-width;
+	margin-right:1em;
+	margin-bottom:1em;
+}

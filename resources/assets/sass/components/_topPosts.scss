@@ -4,5 +4,23 @@
 }
 
 .topPost{
+	height: 400px;
 	width:350px;
+	margin-right:1em;
+
+	&--has_border_bottom{
+		border-bottom:1px solid #f3f3f3;
+	}
+	&__header{
+		display:flex;
+		margin-bottom: 1em;
+	}
+
+	&__thumb{
+		border: 1px solid #f3f3f3;
+		margin-right:1em;
+		width:50px;
+		height:50px;
+		border-radius:50%;
+	}
 }

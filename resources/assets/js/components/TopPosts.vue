@@ -2,7 +2,7 @@
     <div>
         <h1>Top Posts</h1>
         <ul v-if="ready" id="topPosts">
-            <top-post v-for="post in posts" :post="post"></top-post>
+            <top-post v-for="(post,i) in posts" :index="i" :post="post"></top-post>
             <div>
                 <h2>Get this list by mail</h2>
                 <p>get the lists of top posts weekly by email</p>

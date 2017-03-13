@@ -14,7 +14,7 @@
           </div>
           <div class="media-content">
             <p class="title is-4">{{post.blog.blog_title}}</p>
-            <p class="subtitle is-6">{{post.blog.blog_author_twitter_username}}</p>
+            <p class="subtitle is-6">{{post.blog.blog_name}}</p>
           </div>
         </div>
 

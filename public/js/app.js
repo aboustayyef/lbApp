@@ -32056,7 +32056,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "title is-4"
   }, [_vm._v(_vm._s(_vm.post.blog.blog_title))]), _vm._v(" "), _c('p', {
     staticClass: "subtitle is-6"
-  }, [_vm._v(_vm._s(_vm.post.blog.blog_author_twitter_username))])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.post.blog.blog_name))])])]), _vm._v(" "), _c('div', {
     staticClass: "content"
   }, [_c('a', {
     attrs: {
@@ -32138,7 +32138,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": _vm.cachelocation(_vm.post.post_local_image),
       "width": "350px"
     }
-  }), _vm._v(" "), _c('h2', [_vm._v(_vm._s(_vm.post.post_title))])] : _vm._e()], 2), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c('h2', {
+    staticClass: "title is-4"
+  }, [_vm._v(_vm._s(_vm.post.post_title))])] : _vm._e()], 2), _vm._v(" "), _c('div', {
     staticClass: "topPost__footer"
   })])
 },staticRenderFns: []}

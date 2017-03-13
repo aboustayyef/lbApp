@@ -7,7 +7,7 @@
 		<div class="topPost__body">
 			<template v-if="post.post_local_image">
 				<img :src="cachelocation(post.post_local_image)" width="350px">
-				<h2>{{post.post_title}}</h2>
+				<h2 class="title is-4">{{post.post_title}}</h2>
 			</template>
 		</div>
 		<div class="topPost__footer">
